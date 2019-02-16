@@ -7,28 +7,13 @@
   <!-- Intro Banner
   ================================================== -->
   <!-- add class "disable-gradient" to enable consistent background overlay -->
-  <div class="intro-banner" data-background-image="images/home-background.jpg">
+  <div class="intro-banner" data-background-image="@/assets/images/home-background.jpg">
     <div class="container">
       
-      <!-- Intro Headline -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="banner-headline">
-            <h3>
-              <router-link to="/login">Login &amp; Register</router-link><br>
-              <strong>Hire experts or be hired for any job, any time.</strong>
-              <br>
-              <span>Thousands of Sponsors use <strong class="color">Hireo</strong> for getting domestic help.</span>
-              
-            </h3>
-          </div>
-        </div>
-      </div>
-      
       <!-- Search Bar -->
-      <div class="row">
+      <div class="row search-bar">
         <div class="col-md-12">
-          <div class="intro-banner-search-form margin-top-95">
+          <div class="intro-banner-search-form">
 
             <!-- Search Field -->
             <div class="intro-search-field with-autocomplete">
@@ -47,7 +32,8 @@
 
             <!-- Button -->
             <div class="intro-search-button">
-              <button class="button ripple-effect" onclick="window.location.href='jobs-list-layout-full-page-map.html'">Search</button>
+              <button class="button ripple-effect" 
+                onclick="window.location.href='jobs-list-layout-full-page-map.html'">Search</button>
             </div>
           </div>
         </div>
@@ -230,7 +216,9 @@
                   <!-- Job Listing Footer -->
                   <div class="job-listing-footer">
                     <ul>
-                      <li><i class="icon-material-outline-business"></i> Hexagon <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
+                      <li><i class="icon-material-outline-business"></i> Hexagon 
+                        <div class="verified-badge" title="Verified Employer" 
+                          data-tippy-placement="top"></div></li>
                       <li><i class="icon-material-outline-location-on"></i> Singapore</li>
                       <li><i class="icon-material-outline-business-center"></i> Full Time</li>
                       <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
@@ -324,7 +312,9 @@
                   <!-- Job Listing Footer -->
                   <div class="job-listing-footer">
                     <ul>
-                      <li><i class="icon-material-outline-business"></i> King <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
+                      <li><i class="icon-material-outline-business"></i> King 
+                        <div class="verified-badge" title="Verified Employer" 
+                          data-tippy-placement="top"></div></li>
                       <li><i class="icon-material-outline-location-on"></i> Malaysia</li>
                       <li><i class="icon-material-outline-business-center"></i> Full Time</li>
                       <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
@@ -392,7 +382,8 @@
 
         <div class="col-xl-3 col-md-6">
           <!-- Photo Box -->
-          <a href="jobs-list-layout-1.html" class="photo-box" data-background-image="images/featured-city-01.jpg">
+          <a href="jobs-list-layout-1.html" class="photo-box" 
+            data-background-image="images/featured-city-01.jpg">
             <div class="photo-box-content">
               <h3>Singapore</h3>
               <span>376 Jobs</span>
@@ -402,7 +393,8 @@
         
         <div class="col-xl-3 col-md-6">
           <!-- Photo Box -->
-          <a href="jobs-list-layout-full-page-map.html" class="photo-box" data-background-image="images/featured-city-02.jpg">
+          <a href="jobs-list-layout-full-page-map.html" class="photo-box" 
+            data-background-image="images/featured-city-02.jpg">
             <div class="photo-box-content">
               <h3>Dubai</h3>
               <span>645 Jobs</span>
@@ -412,7 +404,8 @@
         
         <div class="col-xl-3 col-md-6">
           <!-- Photo Box -->
-          <a href="jobs-grid-layout-full-page.html" class="photo-box" data-background-image="images/featured-city-03.jpg">
+          <a href="jobs-grid-layout-full-page.html" class="photo-box" 
+            data-background-image="images/featured-city-03.jpg">
             <div class="photo-box-content">
               <h3>UAE</h3>
               <span>832 Jobs</span>
@@ -422,7 +415,8 @@
 
         <div class="col-xl-3 col-md-6">
           <!-- Photo Box -->
-          <a href="jobs-list-layout-2.html" class="photo-box" data-background-image="images/featured-city-04.jpg">
+          <a href="jobs-list-layout-2.html" class="photo-box" 
+            data-background-image="images/featured-city-04.jpg">
             <div class="photo-box-content">
               <h3>Malaysia</h3>
               <span>513 Jobs</span>
@@ -465,12 +459,15 @@
                   <!-- Avatar -->
                   <div class="freelancer-avatar">
                     <div class="verified-badge"></div>
-                    <a href="single-freelancer-profile.html"><img src="images/user-avatar-big-01.jpg" alt=""></a>
+                    <a href="single-freelancer-profile.html">
+                      <img src="images/user-avatar-big-01.jpg" alt=""></a>
                   </div>
 
                   <!-- Name -->
                   <div class="freelancer-name">
-                    <h4><a href="single-freelancer-profile.html">Sekar <img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
+                    <h4><a href="single-freelancer-profile.html">Sekar <img class="flag" 
+                      src="images/flags/gb.svg" alt="" title="United Kingdom" 
+                      data-tippy-placement="top"></a></h4>
                     <span>Plumber</span>
                   </div>
 
@@ -485,12 +482,15 @@
               <div class="freelancer-details">
                 <div class="freelancer-details-list">
                   <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Bangaladesh</strong></li>
+                    <li>Location <strong><i class="icon-material-outline-location-on"></i> 
+                      Bangaladesh</strong></li>
                     <li>Rate <strong>$60 / hr</strong></li>
                     <li>Job Success <strong>95%</strong></li>
                   </ul>
                 </div>
-                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
+                <a href="single-freelancer-profile.html" 
+                  class="button button-sliding-icon ripple-effect">View Profile 
+                    <i class="icon-material-outline-arrow-right-alt"></i></a>
               </div>
             </div>
             <!-- Freelancer / End -->
@@ -508,12 +508,15 @@
                   <!-- Avatar -->
                   <div class="freelancer-avatar">
                     <div class="verified-badge"></div>
-                    <a href="single-freelancer-profile.html"><img src="images/user-avatar-big-02.jpg" alt=""></a>
+                    <a href="single-freelancer-profile.html">
+                      <img src="images/user-avatar-big-02.jpg" alt=""></a>
                   </div>
 
                   <!-- Name -->
                   <div class="freelancer-name">
-                    <h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top"></a></h4>
+                    <h4><a href="#">David Peterson 
+                      <img class="flag" src="images/flags/de.svg" alt="" title="Germany" 
+                        data-tippy-placement="top"></a></h4>
                     <span>iOS Expert + Node Dev</span>
                   </div>
 
@@ -528,12 +531,15 @@
               <div class="freelancer-details">
                 <div class="freelancer-details-list">
                   <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
+                    <li>Location <strong><i class="icon-material-outline-location-on"></i> 
+                      Berlin</strong></li>
                     <li>Rate <strong>$40 / hr</strong></li>
                     <li>Job Success <strong>88%</strong></li>
                   </ul>
                 </div>
-                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
+                <a href="single-freelancer-profile.html" 
+                  class="button button-sliding-icon ripple-effect">View Profile 
+                    <i class="icon-material-outline-arrow-right-alt"></i></a>
               </div>
             </div>
             <!-- Freelancer / End -->
@@ -549,12 +555,14 @@
                   
                   <!-- Avatar -->
                   <div class="freelancer-avatar">
-                    <a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
+                    <a href="single-freelancer-profile.html">
+                      <img src="images/user-avatar-placeholder.png" alt=""></a>
                   </div>
 
                   <!-- Name -->
                   <div class="freelancer-name">
-                    <h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top"></a></h4>
+                    <h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" 
+                      alt="" title="Poland" data-tippy-placement="top"></a></h4>
                     <span>Front-End Developer</span>
                   </div>
 
@@ -569,12 +577,15 @@
               <div class="freelancer-details">
                 <div class="freelancer-details-list">
                   <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
+                    <li>Location <strong><i class="icon-material-outline-location-on"></i> 
+                      Warsaw</strong></li>
                     <li>Rate <strong>$50 / hr</strong></li>
                     <li>Job Success <strong>100%</strong></li>
                   </ul>
                 </div>
-                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
+                <a href="single-freelancer-profile.html" 
+                  class="button button-sliding-icon ripple-effect">View Profile 
+                  <i class="icon-material-outline-arrow-right-alt"></i></a>
               </div>
             </div>
             <!-- Freelancer / End -->
@@ -591,12 +602,15 @@
                   <!-- Avatar -->
                   <div class="freelancer-avatar">
                     <div class="verified-badge"></div>
-                    <a href="single-freelancer-profile.html"><img src="images/user-avatar-big-03.jpg" alt=""></a>
+                    <a href="single-freelancer-profile.html">
+                      <img src="images/user-avatar-big-03.jpg" alt=""></a>
                   </div>
 
                   <!-- Name -->
                   <div class="freelancer-name">
-                    <h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top"></a></h4>
+                    <h4><a href="#">Sindy Forest 
+                      <img class="flag" src="images/flags/au.svg" alt="" title="Australia" 
+                        data-tippy-placement="top"></a></h4>
                     <span>Magento Certified Developer</span>
                   </div>
 
@@ -611,12 +625,15 @@
               <div class="freelancer-details">
                 <div class="freelancer-details-list">
                   <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
+                    <li>Location <strong><i class="icon-material-outline-location-on"></i> 
+                      Brisbane</strong></li>
                     <li>Rate <strong>$70 / hr</strong></li>
                     <li>Job Success <strong>100%</strong></li>
                   </ul>
                 </div>
-                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
+                <a href="single-freelancer-profile.html" 
+                  class="button button-sliding-icon ripple-effect">View Profile 
+                  <i class="icon-material-outline-arrow-right-alt"></i></a>
               </div>
             </div>
             <!-- Freelancer / End -->
@@ -632,12 +649,15 @@
                   
                   <!-- Avatar -->
                   <div class="freelancer-avatar">
-                    <a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
+                    <a href="single-freelancer-profile.html">
+                      <img src="images/user-avatar-placeholder.png" alt=""></a>
                   </div>
 
                   <!-- Name -->
                   <div class="freelancer-name">
-                    <h4><a href="#">Sebastiano Piccio <img class="flag" src="images/flags/it.svg" alt="" title="Italy" data-tippy-placement="top"></a></h4>
+                    <h4><a href="#">Sebastiano Piccio 
+                      <img class="flag" src="images/flags/it.svg" alt="" title="Italy" 
+                        data-tippy-placement="top"></a></h4>
                     <span>Laravel Dev</span>
                   </div>
 
@@ -652,12 +672,15 @@
               <div class="freelancer-details">
                 <div class="freelancer-details-list">
                   <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Milan</strong></li>
+                    <li>Location <strong><i class="icon-material-outline-location-on"></i> 
+                      Milan</strong></li>
                     <li>Rate <strong>$80 / hr</strong></li>
                     <li>Job Success <strong>89%</strong></li>
                   </ul>
                 </div>
-                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
+                <a href="single-freelancer-profile.html" 
+                  class="button button-sliding-icon ripple-effect">View Profile 
+                  <i class="icon-material-outline-arrow-right-alt"></i></a>
               </div>
             </div>
             <!-- Freelancer / End -->
@@ -673,12 +696,15 @@
                   
                   <!-- Avatar -->
                   <div class="freelancer-avatar">
-                    <a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
+                    <a href="single-freelancer-profile.html">
+                      <img src="images/user-avatar-placeholder.png" alt=""></a>
                   </div>
 
                   <!-- Name -->
                   <div class="freelancer-name">
-                    <h4><a href="#">Gabriel Lagueux <img class="flag" src="images/flags/fr.svg" alt="" title="France" data-tippy-placement="top"></a></h4>
+                    <h4><a href="#">Gabriel Lagueux 
+                      <img class="flag" src="images/flags/fr.svg" alt="" title="France" 
+                        data-tippy-placement="top"></a></h4>
                     <span>WordPress Expert</span>
                   </div>
 
@@ -693,12 +719,15 @@
               <div class="freelancer-details">
                 <div class="freelancer-details-list">
                   <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Paris</strong></li>
+                    <li>Location <strong><i class="icon-material-outline-location-on"></i> 
+                      Paris</strong></li>
                     <li>Rate <strong>$50 / hr</strong></li>
                     <li>Job Success <strong>100%</strong></li>
                   </ul>
                 </div>
-                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
+                <a href="single-freelancer-profile.html" 
+                  class="button button-sliding-icon ripple-effect">View Profile 
+                  <i class="icon-material-outline-arrow-right-alt"></i></a>
               </div>
             </div>
             <!-- Freelancer / End -->
@@ -742,22 +771,26 @@
                   <div class="footer-row-inner">
                     <ul class="footer-social-links">
                       <li>
-                        <a href="#" title="Facebook" data-tippy-placement="bottom" data-tippy-theme="light">
+                        <a href="#" title="Facebook" data-tippy-placement="bottom" 
+                          data-tippy-theme="light">
                           <i class="icon-brand-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" title="Twitter" data-tippy-placement="bottom" data-tippy-theme="light">
+                        <a href="#" title="Twitter" data-tippy-placement="bottom" 
+                          data-tippy-theme="light">
                           <i class="icon-brand-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" title="Google Plus" data-tippy-placement="bottom" data-tippy-theme="light">
+                        <a href="#" title="Google Plus" data-tippy-placement="bottom" 
+                          data-tippy-theme="light">
                           <i class="icon-brand-google-plus-g"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" title="LinkedIn" data-tippy-placement="bottom" data-tippy-theme="light">
+                        <a href="#" title="LinkedIn" data-tippy-placement="bottom" 
+                          data-tippy-theme="light">
                           <i class="icon-brand-linkedin-in"></i>
                         </a>
                       </li>
@@ -769,7 +802,8 @@
                 <!-- Language Switcher -->
                 <div class="footer-row">
                   <div class="footer-row-inner">
-                    <select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5">
+                    <select class="selectpicker language-switcher" 
+                      data-selected-text-format="count" data-size="5">
                       <option selected>English</option>
                       <option>Français</option>
                       <option>Español</option>
