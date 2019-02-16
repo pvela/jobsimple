@@ -3,7 +3,7 @@
   <div id="app">
     <Login v-if="!store.currentUser" />
     <div v-else>
-      <button @click="logout">Log out</button>
+      <Home />
     </div>
   </div>
 </template>
