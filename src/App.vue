@@ -3,7 +3,7 @@
   <div id="app">
     <Login v-if="!store.currentUser" />
     <div v-else>
-      <Home />
+      <router-view />
     </div>
   </div>
 </template>
@@ -36,8 +36,11 @@ import Login from './views/Login';
 import Home from './views/Home';
 import Fortmatic from 'fortmatic';
 const fm = new Fortmatic('pk_test_80863C4FA1028899');
+
 export default {
-  components: { Login, Home},
+  components: { 
+    Login, Home
+  },
   data() {
     return {
       store

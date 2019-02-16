@@ -2,15 +2,14 @@
   <div id="wrapper">
     <Header></Header>
 
-    <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis 
-      unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-      eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-      explicabo.</p>
+    <div class="container page">
+      <h2 class="page-header">Select a user type</h2>
+
+      <div class="btns">
+        <router-link class="btn btn-primary btn-lg btns__user" to="employee">Employee</router-link>
+        &nbsp;
+        <router-link class="btn btn-success btn-lg btns__user" to="sponsor">Sponsor</router-link>
+      </div>
 
 
     </div>
@@ -37,7 +36,27 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  padding-top: 1em;
+.page {
+  padding-top: 5em;
+}
+
+.page-header {
+  margin-bottom: 3em;
+}
+
+.btns {
+  /*border: 1px solid black;*/
+  height: 200px;
+  width: 100%;
+}
+
+.btns__user {
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 32px;
+  text-align: center;
+  width: 40%;
 }
 </style>
