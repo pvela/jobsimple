@@ -57,7 +57,7 @@
                 </ul>
               </li>
 
-              <li><a href="#">For Employers</a>
+              <li><a href="#">For Sponsors</a>
                 <ul class="dropdown-nav">
                   <li><a href="#">Find a Freelancer</a>
                     <ul class="dropdown-nav">
@@ -124,186 +124,6 @@
         <!-- Right Side Content / End -->
         <div class="right-side">
 
-          <!--  User Notifications -->
-          <div class="header-widget hide-on-mobile">
-            
-            <!-- Notifications -->
-            <div class="header-notifications">
-
-              <!-- Trigger -->
-              <div class="header-notifications-trigger">
-                <a href="#"><i class="icon-feather-bell"></i><span>4</span></a>
-              </div>
-
-              <!-- Dropdown -->
-              <div class="header-notifications-dropdown">
-
-                <div class="header-notifications-headline">
-                  <h4>Notifications</h4>
-                  <button class="mark-as-read ripple-effect-dark" title="Mark all as read" data-tippy-placement="left">
-                    <i class="icon-feather-check-square"></i>
-                  </button>
-                </div>
-
-                <div class="header-notifications-content">
-                  <div class="header-notifications-scroll" data-simplebar>
-                    <ul>
-                      <!-- Notification -->
-                      <li class="notifications-not-read">
-                        <a href="dashboard-manage-candidates.html">
-                          <span class="notification-icon"><i class="icon-material-outline-group"></i></span>
-                          <span class="notification-text">
-                            <strong>Michael Shannah</strong> applied for a job <span class="color">Full Stack Software Engineer</span>
-                          </span>
-                        </a>
-                      </li>
-
-                      <!-- Notification -->
-                      <li>
-                        <a href="dashboard-manage-bidders.html">
-                          <span class="notification-icon"><i class=" icon-material-outline-gavel"></i></span>
-                          <span class="notification-text">
-                            <strong>Gilbert Allanis</strong> placed a bid on your <span class="color">iOS App Development</span> project
-                          </span>
-                        </a>
-                      </li>
-
-                      <!-- Notification -->
-                      <li>
-                        <a href="dashboard-manage-jobs.html">
-                          <span class="notification-icon"><i class="icon-material-outline-autorenew"></i></span>
-                          <span class="notification-text">
-                            Your job listing <span class="color">Full Stack PHP Developer</span> is expiring.
-                          </span>
-                        </a>
-                      </li>
-
-                      <!-- Notification -->
-                      <li>
-                        <a href="dashboard-manage-candidates.html">
-                          <span class="notification-icon"><i class="icon-material-outline-group"></i></span>
-                          <span class="notification-text">
-                            <strong>Sindy Forrest</strong> applied for a job <span class="color">Full Stack Software Engineer</span>
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            
-            <!-- Messages -->
-            <div class="header-notifications">
-              <div class="header-notifications-trigger">
-                <a href="#"><i class="icon-feather-mail"></i><span>3</span></a>
-              </div>
-
-              <!-- Dropdown -->
-              <div class="header-notifications-dropdown">
-
-                <div class="header-notifications-headline">
-                  <h4>Messages</h4>
-                  <button class="mark-as-read ripple-effect-dark" title="Mark all as read" data-tippy-placement="left">
-                    <i class="icon-feather-check-square"></i>
-                  </button>
-                </div>
-
-                <div class="header-notifications-content">
-                  <div class="header-notifications-scroll" data-simplebar>
-                    <ul>
-                      <!-- Notification -->
-                      <li class="notifications-not-read">
-                        <a href="dashboard-messages.html">
-                          <span class="notification-avatar status-online"><img src="images/user-avatar-small-03.jpg" alt=""></span>
-                          <div class="notification-text">
-                            <strong>David Peterson</strong>
-                            <p class="notification-msg-text">Thanks for reaching out. I'm quite busy right now on many...</p>
-                            <span class="color">4 hours ago</span>
-                          </div>
-                        </a>
-                      </li>
-
-                      <!-- Notification -->
-                      <li class="notifications-not-read">
-                        <a href="dashboard-messages.html">
-                          <span class="notification-avatar status-offline"><img src="images/user-avatar-small-02.jpg" alt=""></span>
-                          <div class="notification-text">
-                            <strong>Sindy Forest</strong>
-                            <p class="notification-msg-text">Hi Tom! Hate to break it to you, but I'm actually on vacation until...</p>
-                            <span class="color">Yesterday</span>
-                          </div>
-                        </a>
-                      </li>
-
-                      <!-- Notification -->
-                      <li class="notifications-not-read">
-                        <a href="dashboard-messages.html">
-                          <span class="notification-avatar status-online"><img src="images/user-avatar-placeholder.png" alt=""></span>
-                          <div class="notification-text">
-                            <strong>Marcin Kowalski</strong>
-                            <p class="notification-msg-text">I received payment. Thanks for cooperation!</p>
-                            <span class="color">Yesterday</span>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <a href="dashboard-messages.html" class="header-notifications-button ripple-effect button-sliding-icon">View All Messages<i class="icon-material-outline-arrow-right-alt"></i></a>
-              </div>
-            </div>
-
-          </div>
-          <!--  User Notifications / End -->
-
-          <!-- User Menu -->
-          <div class="header-widget">
-
-            <!-- Messages -->
-            <div class="header-notifications user-menu">
-              <div class="header-notifications-trigger">
-                <a href="#"><div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div></a>
-              </div>
-
-              <!-- Dropdown -->
-              <div class="header-notifications-dropdown">
-
-                <!-- User Status -->
-                <div class="user-status">
-
-                  <!-- User Name / Avatar -->
-                  <div class="user-details">
-                    <div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
-                    <div class="user-name">
-                      Tom Smith <span>Freelancer</span>
-                    </div>
-                  </div>
-                  
-                  <!-- User Status Switcher -->
-                  <div class="status-switch" id="snackbar-user-status">
-                    <label class="user-online current-status">Online</label>
-                    <label class="user-invisible">Invisible</label>
-                    <!-- Status Indicator -->
-                    <span class="status-indicator" aria-hidden="true"></span>
-                  </div>	
-              </div>
-              
-              <ul class="user-menu-small-nav">
-                <li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-                <li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
-                <li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
-              </ul>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- User Menu / End -->
-
           <!-- Mobile Navigation Button -->
           <span class="mmenu-trigger">
             <button class="hamburger hamburger--collapse" type="button">
@@ -319,7 +139,7 @@
       </div>
     </div>
     <!-- Header / End -->
-
+    <button class="button ripple-effect" @click="logout">Log out</button>
   </header>
   <div class="clearfix"></div>
   <!-- Header Container / End -->
@@ -340,7 +160,8 @@
               <router-link to="/login">Login &amp; Register</router-link><br>
               <strong>Hire experts or be hired for any job, any time.</strong>
               <br>
-              <span>Thousands of small businesses use <strong class="color">Hireo</strong> to turn their ideas into reality.</span>
+              <span>Thousands of Sponsors use <strong class="color">Hireo</strong> for getting domestic help.</span>
+              
             </h3>
           </div>
         </div>
@@ -355,7 +176,7 @@
             <div class="intro-search-field with-autocomplete">
               <label for="autocomplete-input" class="field-title ripple-effect">Where?</label>
               <div class="input-with-icon">
-                <input id="autocomplete-input" type="text" placeholder="Online Job">
+                <input id="autocomplete-input" type="text" placeholder="Country">
                 <i class="icon-material-outline-location-on"></i>
               </div>
             </div>
@@ -388,7 +209,7 @@
             </li>
             <li>
               <strong class="counter">1,232</strong>
-              <span>Freelancers</span>
+              <span>Workers</span>
             </li>
           </ul>
         </div>
@@ -420,8 +241,8 @@
               </div>
               <div class="category-box-counter">612</div>
               <div class="category-box-content">
-                <h3>Web & Software Dev</h3>
-                <p>Software Engineer, Web / Mobile Developer & More</p>
+                <h3>Chef</h3>
+                <p>Asian, Vegan</p>
               </div>
             </a>
 
@@ -432,8 +253,8 @@
               </div>
               <div class="category-box-counter">113</div>
               <div class="category-box-content">
-                <h3>Data Science & Analitycs</h3>
-                <p>Data Specialist / Scientist, Data Analyst & More</p>
+                <h3>Domestic Help</h3>
+                <p>Gardening, home maintenance</p>
               </div>
             </a>
 
@@ -444,8 +265,8 @@
               </div>
               <div class="category-box-counter">186</div>
               <div class="category-box-content">
-                <h3>Accounting & Consulting</h3>
-                <p>Auditor, Accountant, Fnancial Analyst & More</p>
+                <h3>Nanny</h3>
+                <p>baby sitting</p>
               </div>
             </a>
 
@@ -456,8 +277,8 @@
               </div>
               <div class="category-box-counter">298</div>
               <div class="category-box-content">
-                <h3>Writing & Translations</h3>
-                <p>Copywriter, Creative Writer, Translator & More</p>
+                <h3>Tutoring</h3>
+                <p>Math, Science</p>
               </div>
             </a>
 
@@ -468,8 +289,8 @@
               </div>
               <div class="category-box-counter">549</div>						
               <div class="category-box-content">
-                <h3>Sales & Marketing</h3>
-                <p>Brand Manager, Marketing Coordinator & More</p>
+                <h3>Construction Worker</h3>
+                <p>mason</p>
               </div>
             </a>
 
@@ -480,8 +301,8 @@
               </div>
               <div class="category-box-counter">873</div>
               <div class="category-box-content">
-                <h3>Graphics & Design</h3>
-                <p>Creative Director, Web Designer & More</p>
+                <h3>Welder</h3>
+                <p>Welding, Certified</p>
               </div>
             </a>
 
@@ -492,8 +313,8 @@
               </div>
               <div class="category-box-counter">125</div>
               <div class="category-box-content">
-                <h3>Digital Marketing</h3>
-                <p>Darketing Analyst, Social Profile Admin & More</p>
+                <h3>Electrician</h3>
+                <p>electrical certified</p>
               </div>
             </a>
 
@@ -504,8 +325,8 @@
               </div>
               <div class="category-box-counter">445</div>
               <div class="category-box-content">
-                <h3>Education & Training</h3>
-                <p>Advisor, Coach, Education Coordinator & More</p>
+                <h3>Plumber</h3>
+                <p>Plumber</p>
               </div>
             </a>
 
@@ -546,13 +367,13 @@
 
                 <!-- Details -->
                 <div class="job-listing-description">
-                  <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
+                  <h3 class="job-listing-title">Bilingual Nanny for a 2yr old</h3>
 
                   <!-- Job Listing Footer -->
                   <div class="job-listing-footer">
                     <ul>
                       <li><i class="icon-material-outline-business"></i> Hexagon <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-                      <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
+                      <li><i class="icon-material-outline-location-on"></i> Singapore</li>
                       <li><i class="icon-material-outline-business-center"></i> Full Time</li>
                       <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
                     </ul>
@@ -578,13 +399,13 @@
 
                 <!-- Details -->
                 <div class="job-listing-description">
-                  <h3 class="job-listing-title">Competition Law Officer</h3>
+                  <h3 class="job-listing-title">Welder for highrise construction</h3>
 
                   <!-- Job Listing Footer -->
                   <div class="job-listing-footer">
                     <ul>
                       <li><i class="icon-material-outline-business"></i> Laxo</li>
-                      <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
+                      <li><i class="icon-material-outline-location-on"></i> UAE</li>
                       <li><i class="icon-material-outline-business-center"></i> Full Time</li>
                       <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
                     </ul>
@@ -608,13 +429,13 @@
 
                 <!-- Details -->
                 <div class="job-listing-description">
-                  <h3 class="job-listing-title">Barista and Cashier</h3>
+                  <h3 class="job-listing-title">Barista</h3>
 
                   <!-- Job Listing Footer -->
                   <div class="job-listing-footer">
                     <ul>
                       <li><i class="icon-material-outline-business"></i> Coffee</li>
-                      <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
+                      <li><i class="icon-material-outline-location-on"></i> Dubai</li>
                       <li><i class="icon-material-outline-business-center"></i> Full Time</li>
                       <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
                     </ul>
@@ -640,13 +461,13 @@
 
                 <!-- Details -->
                 <div class="job-listing-description">
-                  <h3 class="job-listing-title">Restaurant General Manager</h3>
+                  <h3 class="job-listing-title">Restaurant Cleaner</h3>
 
                   <!-- Job Listing Footer -->
                   <div class="job-listing-footer">
                     <ul>
                       <li><i class="icon-material-outline-business"></i> King <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-                      <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
+                      <li><i class="icon-material-outline-location-on"></i> Malaysia</li>
                       <li><i class="icon-material-outline-business-center"></i> Full Time</li>
                       <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
                     </ul>
@@ -671,13 +492,13 @@
 
                 <!-- Details -->
                 <div class="job-listing-description">
-                  <h3 class="job-listing-title">International Marketing Coordinator</h3>
+                  <h3 class="job-listing-title">Plumber</h3>
 
                   <!-- Job Listing Footer -->
                   <div class="job-listing-footer">
                     <ul>
                       <li><i class="icon-material-outline-business"></i> Skyist</li>
-                      <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
+                      <li><i class="icon-material-outline-location-on"></i> Baharin</li>
                       <li><i class="icon-material-outline-business-center"></i> Full Time</li>
                       <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
                     </ul>
@@ -707,7 +528,7 @@
         <!-- Section Headline -->
         <div class="col-xl-12">
           <div class="section-headline centered margin-top-0 margin-bottom-45">
-            <h3>Featured Cities</h3>
+            <h3>Featured Countries</h3>
           </div>
         </div>
 
@@ -715,7 +536,7 @@
           <!-- Photo Box -->
           <a href="jobs-list-layout-1.html" class="photo-box" data-background-image="images/featured-city-01.jpg">
             <div class="photo-box-content">
-              <h3>San Francisco</h3>
+              <h3>Singapore</h3>
               <span>376 Jobs</span>
             </div>
           </a>
@@ -725,7 +546,7 @@
           <!-- Photo Box -->
           <a href="jobs-list-layout-full-page-map.html" class="photo-box" data-background-image="images/featured-city-02.jpg">
             <div class="photo-box-content">
-              <h3>New York</h3>
+              <h3>Dubai</h3>
               <span>645 Jobs</span>
             </div>
           </a>
@@ -735,7 +556,7 @@
           <!-- Photo Box -->
           <a href="jobs-grid-layout-full-page.html" class="photo-box" data-background-image="images/featured-city-03.jpg">
             <div class="photo-box-content">
-              <h3>Los Angeles</h3>
+              <h3>UAE</h3>
               <span>832 Jobs</span>
             </div>
           </a>
@@ -745,7 +566,7 @@
           <!-- Photo Box -->
           <a href="jobs-list-layout-2.html" class="photo-box" data-background-image="images/featured-city-04.jpg">
             <div class="photo-box-content">
-              <h3>Miami</h3>
+              <h3>Malaysia</h3>
               <span>513 Jobs</span>
             </div>
           </a>
@@ -766,7 +587,7 @@
           <!-- Section Headline -->
           <div class="section-headline margin-top-0 margin-bottom-25">
             <h3>Highest Rated Freelancers</h3>
-            <a href="freelancers-grid-layout.html" class="headline-link">Browse All Freelancers</a>
+            <a href="freelancers-grid-layout.html" class="headline-link">Browse All Workers</a>
           </div>
         </div>
 
@@ -791,8 +612,8 @@
 
                   <!-- Name -->
                   <div class="freelancer-name">
-                    <h4><a href="single-freelancer-profile.html">Tom Smith <img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
-                    <span>UI/UX Designer</span>
+                    <h4><a href="single-freelancer-profile.html">Sekar <img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
+                    <span>Plumber</span>
                   </div>
 
                   <!-- Rating -->
@@ -806,7 +627,7 @@
               <div class="freelancer-details">
                 <div class="freelancer-details-list">
                   <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> London</strong></li>
+                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Bangaladesh</strong></li>
                     <li>Rate <strong>$60 / hr</strong></li>
                     <li>Job Success <strong>95%</strong></li>
                   </ul>
@@ -1033,98 +854,6 @@
   </div>
   <!-- Highest Rated Freelancers / End-->
 
-
-  <!-- Membership Plans -->
-  <div class="section padding-top-60 padding-bottom-75">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xl-12">
-          <!-- Section Headline -->
-          <div class="section-headline centered margin-top-0 margin-bottom-35">
-            <h3>Membership Plans</h3>
-          </div>
-        </div>
-
-
-        <div class="col-xl-12">
-
-          <!-- Billing Cycle  -->
-          <div class="billing-cycle-radios margin-bottom-70">
-            <div class="radio billed-monthly-radio">
-              <input id="radio-5" name="radio-payment-type" type="radio" checked>
-              <label for="radio-5"><span class="radio-label"></span> Billed Monthly</label>
-            </div>
-
-            <div class="radio billed-yearly-radio">
-              <input id="radio-6" name="radio-payment-type" type="radio">
-              <label for="radio-6"><span class="radio-label"></span> Billed Yearly <span class="small-label">Save 10%</span></label>
-            </div>
-          </div>
-
-          <!-- Pricing Plans Container -->
-          <div class="pricing-plans-container">
-
-            <!-- Plan -->
-            <div class="pricing-plan">
-              <h3>Basic Plan</h3>
-              <p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
-              <div class="pricing-plan-label billed-monthly-label"><strong>$19</strong>/ monthly</div>
-              <div class="pricing-plan-label billed-yearly-label"><strong>$205</strong>/ yearly</div>
-              <div class="pricing-plan-features">
-                <strong>Features of Basic Plan</strong>
-                <ul>
-                  <li>1 Listing</li>
-                  <li>30 Days Visibility</li>
-                  <li>Highlighted in Search Results</li>
-                </ul>
-              </div>
-              <a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
-            </div>
-
-            <!-- Plan -->
-            <div class="pricing-plan recommended">
-              <div class="recommended-badge">Recommended</div>
-              <h3>Standard Plan</h3>
-              <p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
-              <div class="pricing-plan-label billed-monthly-label"><strong>$49</strong>/ monthly</div>
-              <div class="pricing-plan-label billed-yearly-label"><strong>$529</strong>/ yearly</div>
-              <div class="pricing-plan-features">
-                <strong>Features of Standard Plan</strong>
-                <ul>
-                  <li>5 Listings</li>
-                  <li>60 Days Visibility</li>
-                  <li>Highlighted in Search Results</li>
-                </ul>
-              </div>
-              <a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
-            </div>
-
-            <!-- Plan -->
-            <div class="pricing-plan">
-              <h3>Extended Plan</h3>
-              <p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
-              <div class="pricing-plan-label billed-monthly-label"><strong>$99</strong>/ monthly</div>
-              <div class="pricing-plan-label billed-yearly-label"><strong>$1069</strong>/ yearly</div>
-              <div class="pricing-plan-features">
-                <strong>Features of Extended Plan</strong>
-                <ul>
-                  <li>Unlimited Listings Listing</li>
-                  <li>90 Days Visibility</li>
-                  <li>Highlighted in Search Results</li>
-                </ul>
-              </div>
-              <a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- Membership Plans / End-->
-
   <!-- Footer
   ================================================== -->
   <div id="footer">
@@ -1288,10 +1017,30 @@
 </template>
 
 <script>
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import { store } from '../store';
+import Fortmatic from 'fortmatic';
+const fm = new Fortmatic('pk_test_80863C4FA1028899');
+
+
 export default {
   name: 'Main',
-  props: {
-    msg: String
+  data() {
+    return {
+      store
+    };
+  },
+  methods: {
+    logout() {
+      fm.user.logout();
+      firebase.auth().signOut()
+        .catch((err) => alert(err.message || err));
+    },
+    addListing() {
+      const listingData = { ethuser:web3.eth.accounts[0], fbuser:store.currentUser};
+      tegula.addListing(listingData);
+    }
   }
 }
 </script>
