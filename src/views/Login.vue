@@ -377,12 +377,13 @@
           
           <!-- Button -->
           <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
-          
+          <button @click.prevent="init">init</button>
           <!-- Social Login -->
           <div class="social-login-separator"><span>or</span></div>
           <div class="social-login-buttons">
             <button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via Facebook</button>
-            <button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
+                <button @click.prevent="signInWithGoogle">Log in with Google</button>
+
           </div>
         </div>
 
@@ -558,12 +559,56 @@
 </template>
 
 <script>
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import Fortmatic from 'fortmatic';
+const fm = new Fortmatic('pk_test_80863C4FA1028899');
+window.web3 = new Web3(fm.getProvider());
+
 export default {
   name: 'Login',
   props: {
-
+    
+  },
+  methods: {
+    init() {
+      web3.currentProvider.enable();
+    },
+    send() {
+      const toAddress = '0xb159752065EA68Ef0B22249Df25864E624fec45D';
+      const sendValue = web3.utils.toWei('0.1', 'ether'); // Convert 1 ether to wei
+        
+      // Get user account wallet address first
+      web3.eth.getAccounts().then((accounts) => {
+        // Send Ether transaction with web3
+        web3.eth.sendTransaction({
+          from: accounts[0],
+          to: toAddress,
+          value: sendValue
+        })
+        .once('transactionHash', (hash) => { console.log(hash); })
+        .once('receipt', (receipt) => { console.log(receipt); });
+      });
+    },
+    signInWithGoogle() {
+      var provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider);
+    }
   }
 }
+fm.user.login().then(() => {
+        if (web3.eth.accounts != undefined && web3.eth.accounts.length > 0) {
+            firebase.auth().signInAnonymously().then(() => {
+              this.$router.push('Home');
+            }).catch(function(error) {
+              // Handle Errors here.
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              // ...
+            });
+        }
+    });
+
 </script>
 
 <style>

@@ -1,13 +1,12 @@
+
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/login">Login</router-link>
+    <Login v-if="!store.currentUser" />
+    <div v-else>
+      <button @click="logout">Log out</button>
     </div>
-    <router-view/>
   </div>
 </template>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -29,3 +28,27 @@
   color: #42b983;
 }
 </style>
+<script>
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import { store } from './store';
+import Login from './views/Login';
+import Home from './views/Home';
+import Fortmatic from 'fortmatic';
+const fm = new Fortmatic('pk_test_80863C4FA1028899');
+export default {
+  components: { Login, Home},
+  data() {
+    return {
+      store
+    };
+  },
+  methods: {
+    logout() {
+      fm.user.logout();
+      firebase.auth().signOut()
+        .catch((err) => alert(err.message || err));
+    },
+  }
+}
+</script>
