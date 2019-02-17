@@ -46,7 +46,7 @@ import { store } from '../store';
 import Fortmatic from 'fortmatic';
 
 export default {
-  name: 'Sponsor',
+  name: 'sponsor',
   data() {
     return {
     };

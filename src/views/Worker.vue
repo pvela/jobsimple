@@ -98,7 +98,7 @@ tegula.initialize().then(() => {
 });
 */
 export default {
-  name: 'Worker',
+  name: 'worker',
   data() {
     return {
     };
