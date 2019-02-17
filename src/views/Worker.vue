@@ -6,8 +6,16 @@
 
       <form class="worker-form">
         <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" placeholder="" />
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" name="address" placeholder="" />
+        </div>
+        <div class="form-group">
           <label for="skillset">Skillset</label>
-          <textarea class="form-control" id="skillset" placeholder="">Indian, Chinese, Thai
+          <textarea class="form-control" id="skillset" placeholder="">Mason, Welder, Roofer, Painter
           </textarea> <!-- multi-select option? -->
         </div>
         <div class="form-group">
@@ -128,6 +136,14 @@ export default {
   margin-top: -3em;
   text-align: left;
   width: 50%;
+}
+
+input[type='text'] {
+  border: 1px solid #DEDEDE;
+}
+
+input[type='number'] {
+  border: 1px solid #DEDEDE;
 }
 
 .page-header {

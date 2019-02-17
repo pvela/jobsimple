@@ -48,7 +48,8 @@
             <option value="vacation">Vacation</option>
           </select>
         </div>
-        <button class="btn btn-primary float-right">Find My Matches</button>
+        <button class="btn btn-primary float-right"
+          v-on:click.stop.prevent="nextPage">Find My Matches</button>
         <button class="btn btn-primary float-right" id="btn--back" 
           v-on:click.stop.prevent="prevPage">Back</button>
       </form>
@@ -71,6 +72,9 @@ export default {
   methods: {
     prevPage: function (event) {
       this.$router.push("/sponsor");
+    },
+    nextPage: function (event) {
+      this.$router.push("/sponsormatchup");
     }
   }
 }
@@ -81,6 +85,14 @@ export default {
   padding-top: 4em;
 }
 
+.page-header {
+  margin-bottom: 0.5em;
+}
+
+.page-subheader {
+  margin-bottom: 3em;
+}
+
 .sponsor-form {
   margin: 0 auto;
   margin-top: -3em;
@@ -88,12 +100,12 @@ export default {
   width: 50%;
 }
 
-.page-header {
-  margin-bottom: 0.5em;
+input[type='text'] {
+  border: 1px solid #DEDEDE;
 }
 
-.page-subheader {
-  margin-bottom: 3em;
+input[type='number'] {
+  border: 1px solid #DEDEDE;
 }
 
 #btn--back {
