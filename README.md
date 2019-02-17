@@ -33,7 +33,7 @@ Imbrex
 
 ## Sustainability Goals
 
-This project was developed to participate in Impact Track of ETHDenver 2019. As part of this Impact Track we identified that JobSimple meets the following goals of UN Sustainability and Development[http://www.undp.org/content/undp/en/home/sustainable-development-goals.html].
+This project was developed to participate in Impact Track of ETHDenver 2019. As part of this Impact Track we identified that JobSimple meets the following goals of [UN Sustainability and Development|http://www.undp.org/content/undp/en/home/sustainable-development-goals.html].
 
 ## Part 1: UN Sustainable Development Goals
 
