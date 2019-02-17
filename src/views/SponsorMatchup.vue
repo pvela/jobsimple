@@ -1,214 +1,215 @@
 <template>
 <div id="wrapper">
-    <Header></Header>
-    <div class="container page">
-      <div class="row">
-        <div class="col-xl-3 col-lg-4">
-          
-        </div>
-        <div class="col-xl-9 col-lg-8 content-left-offset">
+  <div class="container page">
+    <h1 class="page-header">Sponsor</h1>
+    <h2 class="page-subheader">Step 3: Pick any to proceed to interview</h2>
 
-          <h3 class="page-title">Pick upto 3 to proceed to interview</h3>
-          <button class="btn btn-primary float-right" @click="showSponsorStatus">Next</button>
+    <div class="row">
+      <div>
+        <!-- Freelancers List Container -->
+        <div class="freelancers-container freelancers-grid-layout margin-top-35">
+          <!--Freelancer -->
+          <div class="freelancer" id="first" v-on:click="select($event)">
 
-          <!-- Freelancers List Container -->
-          <div class="freelancers-container freelancers-grid-layout margin-top-35">
-            <!--Freelancer -->
-            <div class="freelancer">
-
-              <!-- Overview -->
-              <div class="freelancer-overview">
-                <div class="freelancer-overview-inner">
-                  <div class="freelancer-name">
-                    <span>Smart and well trained Nanny with 15 years of experience. Taken care of 3 kids with a span of 3,7,5 years</span>
-                  </div>
-                  <!-- Rating -->
-                  <div class="freelancer-rating">
-                    <div class="star-rating" data-rating="4.9"></div>
-                  </div>
+            <!-- Overview -->
+            <div class="freelancer-overview">
+              <div class="freelancer-overview-inner">
+                <div class="freelancer-name">
+                  <span>Skilled roofer with 5 years experience leading construction crews on 
+                    roofing projects.</span>
                 </div>
-              </div>
-              <!-- Details -->
-              <div class="freelancer-details">
-                <div class="freelancer-details-list">
-                  <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
-                    <li>Rate <strong>Rs25000 / month</strong></li>
-                    <li>Job Success <strong>95%</strong></li>
-                  </ul>
+                <!-- Rating -->
+                <div class="freelancer-rating">
+                  <div class="star-rating" data-rating="4.9"></div>
                 </div>
               </div>
             </div>
-            <!-- Freelancer / End -->
-
-            <!--Freelancer -->
-            <div class="freelancer">
-
-              <!-- Overview -->
-              <div class="freelancer-overview">
-                <div class="freelancer-overview-inner">
-                  <div class="freelancer-name">
-                    <span>Smart and well trained Nanny with 15 years of experience. Taken care of 3 kids with a span of 3,7,5 years</span>
-                  </div>
-                  <!-- Rating -->
-                  <div class="freelancer-rating">
-                    <div class="star-rating" data-rating="4.9"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Details -->
-              <div class="freelancer-details">
-                <div class="freelancer-details-list">
-                  <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Phillipines</strong></li>
-                    <li>Rate <strong>Rs15000 / month</strong></li>
-                    <li>Job Success <strong>75%</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Freelancer / End -->
-
-            <!--Freelancer -->
-            <div class="freelancer">
-
-              <!-- Overview -->
-              <div class="freelancer-overview">
-                <div class="freelancer-overview-inner">
-                  <div class="freelancer-name">
-                    <span>Smart and well trained Nanny with 15 years of experience. Taken care of 3 kids with a span of 3,7,5 years</span>
-                  </div>
-                  <!-- Rating -->
-                  <div class="freelancer-rating">
-                    <div class="star-rating" data-rating="4.9"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Details -->
-              <div class="freelancer-details">
-                <div class="freelancer-details-list">
-                  <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
-                    <li>Rate <strong>Rs25000 / month</strong></li>
-                    <li>Job Success <strong>95%</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Freelancer / End -->
-
-            <!--Freelancer -->
-            <div class="freelancer">
-
-              <!-- Overview -->
-              <div class="freelancer-overview">
-                <div class="freelancer-overview-inner">
-                  <div class="freelancer-name">
-                    <span>Smart and well trained Nanny with 15 years of experience. Taken care of 3 kids with a span of 3,7,5 years</span>
-                  </div>
-                  <!-- Rating -->
-                  <div class="freelancer-rating">
-                    <div class="star-rating" data-rating="4.9"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Details -->
-              <div class="freelancer-details">
-                <div class="freelancer-details-list">
-                  <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
-                    <li>Rate <strong>Rs25000 / month</strong></li>
-                    <li>Job Success <strong>95%</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Freelancer / End -->
-
-            <!--Freelancer -->
-            <div class="freelancer">
-
-              <!-- Overview -->
-              <div class="freelancer-overview">
-                <div class="freelancer-overview-inner">
-                  <div class="freelancer-name">
-                    <span>Smart and well trained Nanny with 15 years of experience. Taken care of 3 kids with a span of 3,7,5 years</span>
-                  </div>
-                  <!-- Rating -->
-                  <div class="freelancer-rating">
-                    <div class="star-rating" data-rating="4.9"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Details -->
-              <div class="freelancer-details">
-                <div class="freelancer-details-list">
-                  <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
-                    <li>Rate <strong>Rs25000 / month</strong></li>
-                    <li>Job Success <strong>95%</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Freelancer / End -->
-
-            <!--Freelancer -->
-            <div class="freelancer">
-
-              <!-- Overview -->
-              <div class="freelancer-overview">
-                <div class="freelancer-overview-inner">
-                  <div class="freelancer-name">
-                    <span>Smart and well trained Nanny with 15 years of experience. Taken care of 3 kids with a span of 3,7,5 years</span>
-                  </div>
-                  <!-- Rating -->
-                  <div class="freelancer-rating">
-                    <div class="star-rating" data-rating="4.9"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Details -->
-              <div class="freelancer-details">
-                <div class="freelancer-details-list">
-                  <ul>
-                    <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
-                    <li>Rate <strong>Rs25000 / month</strong></li>
-                    <li>Job Success <strong>95%</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Freelancer / End -->
-      
-          </div>
-          <!-- Freelancers Container / End -->
-
-
-          <!-- Pagination -->
-          <div class="clearfix"></div>
-          <div class="row">
-            <div class="col-md-12">
-              <!-- Pagination -->
-              <div class="pagination-container margin-top-40 margin-bottom-60">
-                <nav class="pagination">
-                  <ul>
-                    <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
-                    <li><a href="#" class="ripple-effect">1</a></li>
-                    <li><a href="#" class="current-page ripple-effect">2</a></li>
-                    <li><a href="#" class="ripple-effect">3</a></li>
-                    <li><a href="#" class="ripple-effect">4</a></li>
-                    <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
-                  </ul>
-                </nav>
+            <!-- Details -->
+            <div class="freelancer-details">
+              <div class="freelancer-details-list">
+                <ul>
+                  <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
+                  <li>Rate <strong>Rs25000 / month</strong></li>
+                  <li>Job Success <strong>95%</strong></li>
+                </ul>
               </div>
             </div>
           </div>
-          <!-- Pagination / End -->
+          <!-- Freelancer / End -->
 
+          <!--Freelancer -->
+          <div class="freelancer" id="second" v-on:click="select($event)">
+
+            <!-- Overview -->
+            <div class="freelancer-overview">
+              <div class="freelancer-overview-inner">
+                <div class="freelancer-name">
+                  <span>Carpenter with 3 years experience working on large residential projects 
+                    in Dubai.</span>
+                </div>
+                <!-- Rating -->
+                <div class="freelancer-rating">
+                  <div class="star-rating" data-rating="4.9"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Details -->
+            <div class="freelancer-details">
+              <div class="freelancer-details-list">
+                <ul>
+                  <li>Location <strong><i class="icon-material-outline-location-on"></i> Phillipines</strong></li>
+                  <li>Rate <strong>Rs15000 / month</strong></li>
+                  <li>Job Success <strong>75%</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Freelancer / End -->
+
+          <!--Freelancer -->
+          <div class="freelancer" id="third" v-on:click="select($event)">
+
+            <!-- Overview -->
+            <div class="freelancer-overview">
+              <div class="freelancer-overview-inner">
+                <div class="freelancer-name">
+                  <span>Construction worker with experience working with heavy machinery.</span>
+                </div>
+                <!-- Rating -->
+                <div class="freelancer-rating">
+                  <div class="star-rating" data-rating="4.9"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Details -->
+            <div class="freelancer-details">
+              <div class="freelancer-details-list">
+                <ul>
+                  <li>Location <strong><i class="icon-material-outline-location-on"></i> Kuwait</strong></li>
+                  <li>Rate <strong>Rs25000 / month</strong></li>
+                  <li>Job Success <strong>93%</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Freelancer / End -->
+
+          <!--Freelancer -->
+          <div class="freelancer" id="fourth" v-on:click="select($event)">
+
+            <!-- Overview -->
+            <div class="freelancer-overview">
+              <div class="freelancer-overview-inner">
+                <div class="freelancer-name">
+                  <span>Assistant roofer with 1 year of experience working on large industrial
+                    buildings with metal roofing.
+                  </span>
+                </div>
+                <!-- Rating -->
+                <div class="freelancer-rating">
+                  <div class="star-rating" data-rating="4.9"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Details -->
+            <div class="freelancer-details">
+              <div class="freelancer-details-list">
+                <ul>
+                  <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
+                  <li>Rate <strong>Rs25000 / month</strong></li>
+                  <li>Job Success <strong>87%</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Freelancer / End -->
+
+          <!--Freelancer -->
+          <div class="freelancer" id="fifth" v-on:click="select($event)">
+
+            <!-- Overview -->
+            <div class="freelancer-overview">
+              <div class="freelancer-overview-inner">
+                <div class="freelancer-name">
+                  <span>Lead electrician with experience leading teams wiring residential 
+                    building projects.</span>
+                </div>
+                <!-- Rating -->
+                <div class="freelancer-rating">
+                  <div class="star-rating" data-rating="4.9"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Details -->
+            <div class="freelancer-details">
+              <div class="freelancer-details-list">
+                <ul>
+                  <li>Location <strong><i class="icon-material-outline-location-on"></i> India</strong></li>
+                  <li>Rate <strong>Rs25000 / month</strong></li>
+                  <li>Job Success <strong>96%</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Freelancer / End -->
+
+          <!--Freelancer -->
+          <div class="freelancer" id="sixth" v-on:click="select($event)">
+
+            <!-- Overview -->
+            <div class="freelancer-overview">
+              <div class="freelancer-overview-inner">
+                <div class="freelancer-name">
+                  <span>Plumber with 4 years experience on new construction projects in 
+                    Saudi Arabia.</span>
+                </div>
+                <!-- Rating -->
+                <div class="freelancer-rating">
+                  <div class="star-rating" data-rating="4.9"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Details -->
+            <div class="freelancer-details">
+              <div class="freelancer-details-list">
+                <ul>
+                  <li>Location <strong><i class="icon-material-outline-location-on"></i> Bangladesh</strong></li>
+                  <li>Rate <strong>Rs25000 / month</strong></li>
+                  <li>Job Success <strong>91%</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Freelancer / End -->
+    
         </div>
+        <!-- Freelancers Container / End -->
+
+
+        <!-- Pagination -->
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Pagination -->
+            <div class="pagination-container margin-top-40 margin-bottom-60">
+              <nav class="pagination">
+                <ul>
+                  <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
+                  <li><a href="#" class="ripple-effect">1</a></li>
+                  <li><a href="#" class="current-page ripple-effect">2</a></li>
+                  <li><a href="#" class="ripple-effect">3</a></li>
+                  <li><a href="#" class="ripple-effect">4</a></li>
+                  <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination / End -->
+
       </div>
     </div>
+  </div>
     
   </div>
 
@@ -217,7 +218,6 @@
 <script>
 import { store } from '../store';
 import Fortmatic from 'fortmatic';
-import Header from '../components/Header.vue';
 import { Marketplace } from "aave-js";
 
 const MY_API_SECRET_KEY = "24183a163121aaec189ba29cc22e03136d475cf8096c311063";
@@ -229,9 +229,6 @@ export default {
   data() {
     return {
     };
-  },
-  components: {
-    Header
   },
   methods: {
     sendLendRequest() {
@@ -263,6 +260,11 @@ export default {
     },
     showSponsorStatus() {
       this.$router.push('sponsorstatus');
+    },
+    select: function(event) {
+      var targetId = event.currentTarget.id;
+      console.log(targetId);
+      this.$router.push('/sponsorstatus');
     }
   }
 }
@@ -271,5 +273,17 @@ export default {
 <style scoped>
 .container {
   padding-top: 1em;
+}
+
+.page {
+  padding-top: 4em;
+}
+
+.page-header {
+  margin-bottom: 0.5em;
+}
+
+.page-subheader {
+  margin-bottom: 3em;
 }
 </style>

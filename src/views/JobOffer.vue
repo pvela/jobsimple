@@ -10,7 +10,7 @@
 				<div class="col-xl-6">
 					<div class="dashboard-box">
 						<div class="headline">
-							<h3><i class="icon-material-baseline-notifications-none"></i> Employment Benefits</h3>
+							<h2 class="section-header"><i class="icon-material-baseline-notifications-none"></i> Employment Benefits</h2>
 							<button class="mark-as-read ripple-effect-dark" data-tippy-placement="left" title="Mark all as read">
 									<i class="icon-feather-check-square"></i>
 							</button>
@@ -49,7 +49,7 @@
 								</li>
                 <li>
 									<span class="notification-text">
-										Housing : Accomadation provided
+										Housing : Accommodation provided
 									</span>
 									<!-- Buttons -->
 									<div class="buttons-to-right">
@@ -59,13 +59,14 @@
 							</ul>
 						</div>
 					</div>
+					<input type="checkbox" /><span class="red">You must accept to continue the preboarding process</span>
 				</div>
 
 				<!-- Dashboard Box -->
 				<div class="col-xl-6">
 					<div class="dashboard-box">
 						<div class="headline">
-							<h3><i class="icon-material-outline-assignment"></i> Preboard Checklist</h3>
+							<h2 class="section-header"><i class="icon-material-outline-assignment"></i> Preboarding Checklist</h2>
 						</div>
 							<div class="content">
 							<ul class="dashboard-box-list">
@@ -109,13 +110,15 @@
 							</ul>
 						</div>
 					</div>
+					<input type="checkbox" /><span class="red">Click if completed all preboarding tasks</span>
 				</div>
 
 			</div>
 			<!-- Row / End -->
       </div>
-      </div>
-
+    </div>
+			
+		<button class="btn btn-primary btn-lg btn-continue" @click="nextPage">Continue</button>
   </div>
 </template>
 
@@ -127,6 +130,30 @@ export default {
   name: 'joboffer',
   components: {
     Footer
-  }
+	},
+	methods: {
+		nextPage: function () {
+			this.$router.push('/onboarding');
+		}
+	}
 }
 </script>
+
+<style scoped>
+.section-header {
+	color: #00F;
+}
+
+.content {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.red {
+	color: #F00;
+}
+
+.btn-continue {
+	margin-top: 2em;
+}
+</style>
