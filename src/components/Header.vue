@@ -24,13 +24,14 @@
 
                 <li><a href="#">Workers</a>
                   <ul class="dropdown-nav">
-                    <li><a href="worker">Worker</a></li>
+                    <li><router-link to="worker">Worker</router-link></li>
+                    <li><router-link to="find">Find</router-link></li>
                   </ul>
                 </li>
 
                 <li><a href="#">Sponsors</a>
                   <ul class="dropdown-nav">
-                    <li><a href="sponsor">Sponsor</a></li>
+                    <li><router-link to="sponsor">Sponsor</router-link></li>
                   </ul>
                 </li>
 
