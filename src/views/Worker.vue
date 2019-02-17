@@ -1,21 +1,34 @@
 <template>
   <div id="wrapper">
     <div class="container page">
-      <h1 class="page-header">Worker | Create My Profile</h1>
+      <h1 class="page-header">Worker</h1>
+      <h2 class="page-subheader">Create My Profile</h2>
 
       <form class="worker-form">
         <div class="form-group">
           <label for="skillset">Skillset</label>
           <textarea class="form-control" id="skillset" placeholder="">Indian, Chinese, Thai
-          </textarea>
+          </textarea> <!-- multi-select option? -->
         </div>
         <div class="form-group">
-          <label for="salary">Salary (per month)</label>
-          <input type="number" class="form-control" id="salary" value="50000" />
+          <label for="salary">Years of Experience</label>
+          <input type="number" class="form-control" id="salary" value="1" />
         </div>
         <div class="form-group">
-          <label for="availability">Availability</label>
+          <label for="salary">Desired Salary (USD per month)</label>
+          <input type="number" class="form-control" id="salary" value="2000" />
+        </div>
+        <div class="form-group">
+          <label for="availability">Earliest Date of Availability</label>
           <input type="date" class="form-control" id="availability" />
+        </div>
+        <div class="form-group">
+          <label for="length">Maximum Length of Contract</label>
+          <select class="form-control" id="country-from">
+            <option value="1">1 year</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+          </select>
         </div>
         <div class="row">
         <!-- https://www.freeformatter.com/iso-country-list-html-select.html#iso31662 -->
@@ -29,7 +42,7 @@
             </select>
           </div>
           <div class="form-group col-md-6">
-            <label for="country-to">Country To</label>
+            <label for="country-to">Country To</label> <!-- multi-select option? -->
             <select class="form-control" id="country-to">
               <option value="DB">Dubai</option> <!-- check country code -->
               <option value="MY">Malaysia</option>
@@ -39,6 +52,13 @@
           </div>
         </div>
         <div class="form-group">
+          <label for="visa">Do you have a valid passport?</label>
+          <select class="form-control" id="country-to">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="resume">Resume</label>
           <input type="file" class="" id="resume" />
         </div>
@@ -46,11 +66,12 @@
           <label for="video">Video</label>
           <input type="file" class="" id="video" />
         </div>
-        <div class="form-group">
-          <label for="visa">Visa / Passport</label>
-          <input type="file" class="" id="visa" />
-        </div>
+
         <button class="btn btn-primary float-right">Submit</button>
+        <!-- 
+          You have successfully submitted your application. 
+          We will review and let you know your application status as soon as possible.
+        -->
       </form>
     </div>
 
@@ -61,17 +82,12 @@
 <script>
 import { store } from '../store';
 import Fortmatic from 'fortmatic';
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Worker',
   data() {
     return {
     };
-  },
-  components: {
-    Header
   },
   methods: {
   }
@@ -80,7 +96,7 @@ export default {
 
 <style scoped>
 .page {
-  padding-top: 5em;
+  padding-top: 4em;
 }
 
 .worker-form {
@@ -91,6 +107,10 @@ export default {
 }
 
 .page-header {
+  margin-bottom: 0.5em;
+}
+
+.page-subheader {
   margin-bottom: 3em;
 }
 

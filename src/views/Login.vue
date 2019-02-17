@@ -596,18 +596,19 @@ export default {
     }
   }
 }
+
 fm.user.login().then(() => {
-        if (web3.eth.accounts != undefined && web3.eth.accounts.length > 0) {
-            firebase.auth().signInAnonymously().then(() => {
-              this.$router.push('Home');
-            }).catch(function(error) {
-              // Handle Errors here.
-              var errorCode = error.code;
-              var errorMessage = error.message;
-              // ...
-            });
-        }
+  if (web3.eth.accounts != undefined && web3.eth.accounts.length > 0) {
+    firebase.auth().signInAnonymously().then(() => {
+      this.$router.push('Home');
+    }).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
     });
+  }
+});
 
 </script>
 

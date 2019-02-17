@@ -13,22 +13,16 @@
             
             <!-- Logo -->
             <div id="logo">
-              <a href="index.html"><img src="@/assets/images/logo.png" alt="Hireo"></a>
+              <router-link to="/">
+                <img src="@/assets/images/logo_jobsimple.png" alt="JobSimple">
+              </router-link>
             </div>
 
             <!-- Main Navigation -->
             <nav id="navigation">
               <ul id="responsive">
 
-                <li><a href="#" class="current">Home</a>
-                  <ul class="dropdown-nav">
-                    <li><a href="index.html">Home 1</a></li>
-                    <li><a href="index-2.html">Home 2</a></li>
-                    <li><a href="index-3.html">Home 3</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="#">Find Work</a>
+                <li><a href="#">Workers</a>
                   <ul class="dropdown-nav">
                     <li><a href="#">Browse Jobs</a>
                       <ul class="dropdown-nav">
@@ -40,7 +34,7 @@
                         <li><a href="jobs-grid-layout.html">Grid Layout</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Browse Tasks</a>
+                    <li><a href="#">Sponsors</a>
                       <ul class="dropdown-nav">
                         <li><a href="tasks-list-layout-1.html">List Layout 1</a></li>
                         <li><a href="tasks-list-layout-2.html">List Layout 2</a></li>
@@ -55,7 +49,7 @@
                   </ul>
                 </li>
 
-                <li><a href="#">For Sponsors</a>
+                <li><a href="#">Sponsors</a>
                   <ul class="dropdown-nav">
                     <li><a href="#">Find a Freelancer</a>
                       <ul class="dropdown-nav">
@@ -68,45 +62,6 @@
                     <li><a href="single-freelancer-profile.html">Freelancer Profile</a></li>
                     <li><a href="dashboard-post-a-job.html">Post a Job</a></li>
                     <li><a href="dashboard-post-a-task.html">Post a Task</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="#">Dashboard</a>
-                  <ul class="dropdown-nav">
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="dashboard-messages.html">Messages</a></li>
-                    <li><a href="dashboard-bookmarks.html">Bookmarks</a></li>
-                    <li><a href="dashboard-reviews.html">Reviews</a></li>
-                    <li><a href="dashboard-manage-jobs.html">Jobs</a>
-                      <ul class="dropdown-nav">
-                        <li><a href="dashboard-manage-jobs.html">Manage Jobs</a></li>
-                        <li><a href="dashboard-manage-candidates.html">Manage Candidates</a></li>
-                        <li><a href="dashboard-post-a-job.html">Post a Job</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="dashboard-manage-tasks.html">Tasks</a>
-                      <ul class="dropdown-nav">
-                        <li><a href="dashboard-manage-tasks.html">Manage Tasks</a></li>
-                        <li><a href="dashboard-manage-bidders.html">Manage Bidders</a></li>
-                        <li><a href="dashboard-my-active-bids.html">My Active Bids</a></li>
-                        <li><a href="dashboard-post-a-task.html">Post a Task</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="dashboard-settings.html">Settings</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="#">Pages</a>
-                  <ul class="dropdown-nav">
-                    <li><a href="pages-blog.html">Blog</a></li>
-                    <li><a href="pages-pricing-plans.html">Pricing Plans</a></li>
-                    <li><a href="pages-checkout-page.html">Checkout Page</a></li>
-                    <li><a href="pages-invoice-template.html">Invoice Template</a></li>
-                    <li><a href="pages-user-interface-elements.html">User Interface Elements</a></li>
-                    <li><a href="pages-icons-cheatsheet.html">Icons Cheatsheet</a></li>
-                    <li><a href="pages-login.html">Login & Register</a></li>
-                    <li><a href="pages-404.html">404 Page</a></li>
-                    <li><a href="pages-contact.html">Contact</a></li>
                   </ul>
                 </li>
 

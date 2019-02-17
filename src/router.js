@@ -26,6 +26,22 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Worker.vue')
+    },
+    {
+      path: '/sponsor',
+      name: 'sponsor',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/Sponsor.vue')
+    },
+    {
+      path: '/jobposting',
+      name: 'jobposting',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/JobPosting.vue')
     }
   ]
 })

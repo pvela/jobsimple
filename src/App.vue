@@ -3,7 +3,7 @@
   <div id="app">
     <Header />
     <Login v-if="!store.currentUser" />
-    <div v-else>
+    <div id="router" v-else>
       <router-view />
     </div>
     <Footer />
@@ -42,13 +42,26 @@ export default {
 </script>
 
 <style>
+html, body {
+  height: 100%;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  height: 100%;
   text-align: center;
   color: #2c3e50;
 }
+
+#router {
+  flex: 1 0 auto;
+}
+
 #nav {
   padding: 30px;
 }
@@ -60,5 +73,9 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+footer {
+  flex-shrink: 0;
 }
 </style>
