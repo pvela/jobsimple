@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b6b18"],{"1df5":function(e,t,n){"use strict";n.r(t);var o=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"home"},[n("Footer")],1)},s=[],u=n("fd2d"),a={name:"setupinterview",components:{Footer:u["default"]}},c=a,l=n("2877"),r=Object(l["a"])(c,o,s,!1,null,null,null);t["default"]=r.exports}}]);
-//# sourceMappingURL=chunk-2d0b6b18.85e4396f.js.map
+//# sourceMappingURL=chunk-2d0b6b18.4ddcb149.js.map
