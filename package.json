@@ -3,17 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "postinstall": "npm install express",
+    "deploy": "git subtree push --prefix dist heroku master"
   },
   "dependencies": {
     "aave-js": "^1.0.4",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.12",
+    "express": "^4.16.4",
     "firebase": "^5.8.3",
     "fortmatic": "^0.3.2",
     "jquery": "^3.3.1",
-    "tegula": "^0.4.3",
+    "serve-static": "^1.13.2",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1"
   },
