@@ -362,7 +362,7 @@
           </div>
             
           <!-- Form -->
-          <form method="post" id="login-form">
+          <!--<form method="post" id="login-form">
             <div class="input-with-icon-left">
               <i class="icon-material-baseline-mail-outline"></i>
               <input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
@@ -373,10 +373,10 @@
               <input type="password" class="input-text with-border" name="password" id="password" placeholder="Password" required/>
             </div>
             <a href="#" class="forgot-password">Forgot Password?</a>
-          </form>
+          </form>-->
           
           <!-- Button -->
-          <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
+          <button  @click.prevent="init" class="button full-width button-sliding-icon ripple-effect margin-top-10"  form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
           <button @click.prevent="init">init</button>
           <!-- Social Login -->
           <div class="social-login-separator"><span>or</span></div>

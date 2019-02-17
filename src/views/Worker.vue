@@ -50,7 +50,7 @@
           <label for="visa">Visa / Passport</label>
           <input type="file" class="" id="visa" />
         </div>
-        <button class="btn btn-primary float-right">Submit</button>
+        <button class="btn btn-primary float-right" @click="addListing">Submit</button>
       </form>
     </div>
 
@@ -60,10 +60,17 @@
 
 <script>
 import { store } from '../store';
-import Fortmatic from 'fortmatic';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+/*import Tegula from 'tegula';
+const tegula = new Tegula();
 
+// initialize everything
+tegula.initialize().then(() => {
+  // now you're good to go!
+  console.log("tegula initialized");
+});
+*/
 export default {
   name: 'Worker',
   data() {
@@ -74,6 +81,16 @@ export default {
     Header
   },
   methods: {
+    addListing() {
+      /*const listingData = { "id":"1","name":"name","opendata":"location, price, desc" };
+      tegula.addListing(listingData).then((results) => {
+        console.log("##################");
+        console.log(results);
+        //this.$router.push('workerstatus');
+      });*/
+      this.$router.push('workerstatus');
+    }
+
   }
 }
 </script>

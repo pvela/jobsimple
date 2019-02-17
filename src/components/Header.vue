@@ -20,12 +20,7 @@
             <nav id="navigation">
               <ul id="responsive">
 
-                <li><a href="#" class="current">Home</a>
-                  <ul class="dropdown-nav">
-                    <li><a href="index.html">Home 1</a></li>
-                    <li><a href="index-2.html">Home 2</a></li>
-                    <li><a href="index-3.html">Home 3</a></li>
-                  </ul>
+                <li><router-link to="find">Find Workers</router-link>
                 </li>
 
                 <li><a href="#">Find Work</a>
@@ -71,42 +66,10 @@
                   </ul>
                 </li>
 
-                <li><a href="#">Dashboard</a>
+                <li><a href="#">Matchup</a>
                   <ul class="dropdown-nav">
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="dashboard-messages.html">Messages</a></li>
-                    <li><a href="dashboard-bookmarks.html">Bookmarks</a></li>
-                    <li><a href="dashboard-reviews.html">Reviews</a></li>
-                    <li><a href="dashboard-manage-jobs.html">Jobs</a>
-                      <ul class="dropdown-nav">
-                        <li><a href="dashboard-manage-jobs.html">Manage Jobs</a></li>
-                        <li><a href="dashboard-manage-candidates.html">Manage Candidates</a></li>
-                        <li><a href="dashboard-post-a-job.html">Post a Job</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="dashboard-manage-tasks.html">Tasks</a>
-                      <ul class="dropdown-nav">
-                        <li><a href="dashboard-manage-tasks.html">Manage Tasks</a></li>
-                        <li><a href="dashboard-manage-bidders.html">Manage Bidders</a></li>
-                        <li><a href="dashboard-my-active-bids.html">My Active Bids</a></li>
-                        <li><a href="dashboard-post-a-task.html">Post a Task</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="dashboard-settings.html">Settings</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="#">Pages</a>
-                  <ul class="dropdown-nav">
-                    <li><a href="pages-blog.html">Blog</a></li>
-                    <li><a href="pages-pricing-plans.html">Pricing Plans</a></li>
-                    <li><a href="pages-checkout-page.html">Checkout Page</a></li>
-                    <li><a href="pages-invoice-template.html">Invoice Template</a></li>
-                    <li><a href="pages-user-interface-elements.html">User Interface Elements</a></li>
-                    <li><a href="pages-icons-cheatsheet.html">Icons Cheatsheet</a></li>
-                    <li><a href="pages-login.html">Login & Register</a></li>
-                    <li><a href="pages-404.html">404 Page</a></li>
-                    <li><a href="pages-contact.html">Contact</a></li>
+                    <li><router-link to="matchup">Worker</router-link></li>
+                    <li><router-link to="sponsormatchup">Sponsor</router-link></li>
                   </ul>
                 </li>
 
@@ -151,6 +114,7 @@ import 'firebase/auth';
 import { store } from '../store';
 import Fortmatic from 'fortmatic';
 const fm = new Fortmatic('pk_test_80863C4FA1028899');
+import WorkerMatchup from '../views/WorkerMatchup';
 
 export default {
   name: 'Header',
