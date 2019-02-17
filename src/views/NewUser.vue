@@ -1,12 +1,10 @@
 <template>
   <div id="wrapper">
-    <Header></Header>
-
     <div class="container page">
       <h2 class="page-header">Select a user type</h2>
 
       <div class="btns">
-        <router-link class="btn btn-primary btn-lg btns__user" to="employee">Employee</router-link>
+        <router-link class="btn btn-primary btn-lg btns__user" to="worker">Worker</router-link>
         &nbsp;
         <router-link class="btn btn-success btn-lg btns__user" to="sponsor">Sponsor</router-link>
       </div>

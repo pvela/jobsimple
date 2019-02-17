@@ -2,8 +2,6 @@
   <!-- Wrapper -->
   <div id="wrapper">
 
-  <Header></Header>
-
   <!-- Intro Banner
   ================================================== -->
   <!-- add class "disable-gradient" to enable consistent background overlay -->
