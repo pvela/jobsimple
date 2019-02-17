@@ -84,7 +84,6 @@
 
 <script>
 import { store } from '../store';
-<<<<<<< HEAD
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 
