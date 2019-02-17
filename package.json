@@ -14,7 +14,6 @@
     "firebase": "^5.8.3",
     "fortmatic": "^0.3.2",
     "jquery": "^3.3.1",
-    "tegula": "^0.4.3",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1",
     "@vue/cli-service": "^3.4.0",
