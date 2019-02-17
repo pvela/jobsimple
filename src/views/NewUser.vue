@@ -1,14 +1,19 @@
 <template>
   <div id="wrapper">
     <div class="container page">
-      <h2 class="page-header">Select a user type</h2>
+      <h2 class="page-header">Choose Your Profile</h2>
 
       <div class="btns">
-        <router-link class="btn btn-primary btn-lg btns__user" to="worker">Worker</router-link>
+        <router-link class="btn btn-primary btn-lg btns__user" to="worker">
+          Looking for a job?<br>
+          <span class="type-header">Worker</span>
+        </router-link>
         &nbsp;
-        <router-link class="btn btn-success btn-lg btns__user" to="sponsor">Sponsor</router-link>
+        <router-link class="btn btn-success btn-lg btns__user" to="sponsor">
+          Need to hire someone?<br>
+          <span class="type-header">Sponsor</span>
+        </router-link>
       </div>
-
 
     </div>
   </div>
@@ -17,16 +22,12 @@
 <script>
 import { store } from '../store';
 import Fortmatic from 'fortmatic';
-import Header from '../components/Header.vue';
 
 export default {
   name: 'NewUser',
   data() {
     return {
     };
-  },
-  components: {
-    Header
   },
   methods: {
   }
@@ -56,5 +57,10 @@ export default {
   margin: 32px;
   text-align: center;
   width: 40%;
+}
+
+.type-header {
+  font-size: 2.5em;
+  font-weight: 700;
 }
 </style>

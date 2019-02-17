@@ -13,17 +13,16 @@
             
             <!-- Logo -->
             <div id="logo">
-              <a href="index.html"><img src="@/assets/images/logo.png" alt="Hireo"></a>
+              <router-link to="/">
+                <img src="@/assets/images/logo_jobsimple.png" alt="JobSimple">
+              </router-link>
             </div>
 
             <!-- Main Navigation -->
             <nav id="navigation">
               <ul id="responsive">
 
-                <li><router-link to="find">Find Workers</router-link>
-                </li>
-
-                <li><a href="#">Find Work</a>
+                <li><a href="#">Workers</a>
                   <ul class="dropdown-nav">
                     <li><a href="#">Browse Jobs</a>
                       <ul class="dropdown-nav">
@@ -35,7 +34,7 @@
                         <li><a href="jobs-grid-layout.html">Grid Layout</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Browse Tasks</a>
+                    <li><a href="#">Sponsors</a>
                       <ul class="dropdown-nav">
                         <li><a href="tasks-list-layout-1.html">List Layout 1</a></li>
                         <li><a href="tasks-list-layout-2.html">List Layout 2</a></li>
@@ -50,7 +49,7 @@
                   </ul>
                 </li>
 
-                <li><a href="#">For Sponsors</a>
+                <li><a href="#">Sponsors</a>
                   <ul class="dropdown-nav">
                     <li><a href="#">Find a Freelancer</a>
                       <ul class="dropdown-nav">
@@ -63,13 +62,6 @@
                     <li><a href="single-freelancer-profile.html">Freelancer Profile</a></li>
                     <li><a href="dashboard-post-a-job.html">Post a Job</a></li>
                     <li><a href="dashboard-post-a-task.html">Post a Task</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="#">Matchup</a>
-                  <ul class="dropdown-nav">
-                    <li><router-link to="matchup">Worker</router-link></li>
-                    <li><router-link to="sponsormatchup">Sponsor</router-link></li>
                   </ul>
                 </li>
 

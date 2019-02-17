@@ -11,6 +11,7 @@
 footer {
   background-color: #DEDEDE;
   height: 80px;
+  margin-top: 5em;
   padding-top: 0.5em;
 }
 </style>
