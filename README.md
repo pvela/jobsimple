@@ -15,8 +15,8 @@ JobSimple is a transparent, equal opportunity marketplace to connect workers wit
 ## Winners
 JobSimple won in the following categories at ETHDenver 2019
 
-* Impact Track Top 5
-* Best Media headline
+* Impact Track Winner
+* Best Media headline from overall ETHDenver competition
 * Most Creative Tegula Use Case - Sponsored by Imbrex
 * Build user-friendly DApps using Fortmatic for identity management - Sponsored by Fortmatic
 * Best use of the ETHLend API - Sponsored by Aave
