@@ -3,10 +3,23 @@
 JobSimple is A transparent, equal opportunity marketplace to connect workers with sponsors for job opportunities and a micro-lending network (ETH lend) for training and career development.  JobSimple is built to eliminate the need for corrupt recruitment agencies that exploit migrant workers. We aim to fight income inequality and human rights abuses one job placement at a time.
 
 # Team Members. First and Last Names
-Prabhu Velayutham,
-Tyler Tworek,
-Steve Ham,
-Somasundaram Sundaram
+* Prabhu Velayutham,
+* Tyler Tworek,
+* Steve Ham,
+* Somasundaram Sundaram
+
+## Mentors
+* Jeremey S Goldstein
+* Shannon Ewing
+
+## Winners
+JobSimple won in the following categories at ETHDenver 2019
+
+* Impact Track Top 5
+* Best Media headline
+* Most Creative Tegula Use Case - Sponsored by Imbrex
+* Build user-friendly DApps using Fortmatic for identity management - Sponsored by Fortmatic
+* Best use of the ETHLend API - Sponsored by Aave
 
 # Detailed Project Description (no more than 3-4 sentences)
 A transparent, equal opportunity marketplace to connect workers with sponsors for job opportunities and a micro-lending network (ETH lend) for training and career development.  JobSimple is built to eliminate the need for corrupt recruitment agencies that exploit migrant workers. We aim to fight income inequality and human rights abuses one job placement at a time.
