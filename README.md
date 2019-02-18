@@ -1,6 +1,6 @@
 ## What is JobSimple 
 
-JobSimple is A transparent, equal opportunity marketplace to connect workers with sponsors for job opportunities and a micro-lending network (ETH lend) for training and career development.  JobSimple is built to eliminate the need for corrupt recruitment agencies that exploit migrant workers. We aim to fight income inequality and human rights abuses one job placement at a time.
+JobSimple is a transparent, equal opportunity marketplace to connect workers with sponsors for job opportunities and a micro-lending network (ETH lend) for training and career development.  JobSimple is built to eliminate the need for corrupt recruitment agencies that exploit migrant workers. We aim to fight income inequality and human rights abuses one job placement at a time.
 
 # Team Members. First and Last Names
 * Prabhu Velayutham,
