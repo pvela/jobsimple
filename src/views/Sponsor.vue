@@ -42,11 +42,8 @@
 </template>
 
 <script>
-import { store } from '../store';
-import Fortmatic from 'fortmatic';
-
 export default {
-  name: 'sponsor',
+  name: 'Sponsor',
   data() {
     return {
     };
@@ -60,10 +57,6 @@ export default {
 </script>
 
 <style scoped>
-.page {
-  padding-top: 4em;
-}
-
 .page-header {
   margin-bottom: 0.5em;
 }

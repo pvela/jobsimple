@@ -78,7 +78,7 @@
           <label for="visa">Visa / Passport</label>
           <input type="file" class="" id="visa" />
         </div>
-        <button class="btn btn-primary float-right" @click="addListing">Submit</button>
+        <button class="btn btn-primary float-right" @click.prevent="addListing">Submit</button>
         <!--
           You have successfully submitted your application. 
           We will review and let you know your application status as soon as possible.
@@ -91,10 +91,6 @@
 </template>
 
 <script>
-import { store } from '../store';
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
-
 /*import Tegula from 'tegula';
 const tegula = new Tegula();
 import Fortmatic from 'fortmatic';
@@ -106,7 +102,7 @@ tegula.initialize().then(() => {
 });
 */
 export default {
-  name: 'worker',
+  name: 'Worker',
   data() {
     return {
     };
@@ -127,10 +123,6 @@ export default {
 </script>
 
 <style scoped>
-.page {
-  padding-top: 4em;
-}
-
 .worker-form {
   margin: 0 auto;
   margin-top: -3em;

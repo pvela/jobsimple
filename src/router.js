@@ -1,10 +1,13 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import store from '@/store.js';
 
-Vue.use(Router)
+Vue.use(Router);
 
-export default new Router({
+const router = new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -12,86 +15,25 @@ export default new Router({
       component: Home
     },
     {
+      path: '/about',
+      name: 'about',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
       path: '/login',
       name: 'login',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Login.vue')
+      component: () => import('./views/Login.vue')
     },
     {
-      path: '/worker',
-      name: 'worker',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Worker.vue')
-    },
-    {
-      path: '/matchup',
-      name: 'matchup',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/WorkerMatchup.vue')
-    },
-    {
-      path: '/find',
-      name: 'find',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './components/Main.vue')
-    },
-    {
-      path: '/sponsormatchup',
-      name: 'sponsormatchup',
-      component: () => import('./views/SponsorMatchup.vue')
-    },
-    {
-      path: '/accept',
-      name: 'accept',
-      component: () => import('./views/Accept.vue')
-    },
-    {
-      path: '/joboffer',
-      name: 'joboffer',
-      component: () => import('./views/JobOffer.vue')
-    },
-    {
-      path: '/projectstatus',
-      name: 'projectstatus',
-      component: () => import('./views/ProjectStatus.vue')
-    },
-    {
-      path: '/ready',
-      name: 'ready',
-      component: () => import('./views/Ready.vue')
-    },
-    {
-      path: '/setupinterview',
-      name: 'setupinterview',
-      component: () => import('./views/SetupInterview.vue')
-    },
-    {
-      path: '/sponsorstake',
-      name: 'sponsorstake',
-      component: () => import('./views/SponsorStake.vue')
-    },
-    {
-      path: '/sponsorstatus',
-      name: 'sponsorstatus',
-      component: () => import('./views/SponsorStatus.vue')
-    },
-    {
-      path: '/sponsorworkerprofile',
-      name: 'sponsorworkerprofile',
-      component: () => import('./views/SponsorWorkerProfile.vue')
-    },
-    {
-      path: '/workerstatus',
-      name: 'workerstatus',
-      component: () => import('./views/WorkerStatus.vue')
+        path: '/register',
+        name: 'register',
+        component: () => import('./views/Register.vue')
     },
     {
       path: '/sponsor',
@@ -99,7 +41,10 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Sponsor.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Sponsor.vue'),
+      meta: {
+        authRequired: true
+      }
     },
     {
       path: '/jobposting',
@@ -107,7 +52,42 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/JobPosting.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/JobPosting.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: '/sponsormatchup',
+      name: 'sponsormatchup',
+      component: () => import('./views/SponsorMatchup.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: '/sponsorstatus',
+      name: 'sponsorstatus',
+      component: () => import('./views/SponsorStatus.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: '/sponsorstake',
+      name: 'sponsorstake',
+      component: () => import('./views/SponsorStake.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: '/joboffer',
+      name: 'joboffer',
+      component: () => import('./views/JobOffer.vue'),
+      meta: {
+        authRequired: true
+      }
     },
     {
       path: '/onboarding',
@@ -115,7 +95,53 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Onboarding.vue')
-    }
+      component: () => import(/* webpackChunkName: "about" */ './views/Onboarding.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: '/worker',
+      name: 'worker',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/Worker.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: '/workerstatus',
+      name: 'workerstatus',
+      component: () => import('./views/WorkerStatus.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: '/workermatchup',
+      name: 'workermatchup',
+      component: () => import('./views/WorkerMatchup.vue'),
+      meta: {
+        authRequired: true
+      }
+    },
   ]
-})
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.authRequired)) {
+    if (!store.state.user) {
+      next({
+        path: '/login'
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
+
+export default router;

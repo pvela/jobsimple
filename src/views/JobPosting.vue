@@ -60,9 +60,6 @@
 </template>
 
 <script>
-import { store } from '../store';
-import Fortmatic from 'fortmatic';
-
 export default {
   name: 'JobPosting',
   data() {
@@ -82,7 +79,7 @@ export default {
 
 <style scoped>
 .page {
-  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .page-header {

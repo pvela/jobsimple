@@ -15,9 +15,6 @@
 </template>
 
 <script>
-import { store } from '../store';
-import Fortmatic from 'fortmatic';
-
 export default {
   name: 'Onboarding',
   data() {

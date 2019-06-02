@@ -63,8 +63,8 @@
 
 												<!-- Buttons -->
 												<div class="buttons-to-right always-visible margin-top-25 margin-bottom-0">
-													<router-link to="joboffer"  class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Hire Worker</router-link>
-                          <a href=""  class="popup-with-zoom-anim button ripple-effect"> Reject Worker</a>
+													<router-link to="/joboffer"  class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Hire Worker</router-link>
+                          <router-link to="#"  class="popup-with-zoom-anim button ripple-effect"> Reject Worker</router-link>
 													<a href="#small-dialog-2" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
 													<a href="#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
 												</div>
@@ -164,19 +164,15 @@
 
 <script>
 // @ is an alias to /src
-import Footer from '../components/Footer.vue';
-const toAddress = '0x2186F17f32b9bb57B5823E4b1C47Db32EB3B0674';
-      const sendValue = web3.toWei('0.1', 'ether');
-        web3.eth.sendTransaction({
-          from: web3.eth.accounts[0],
-          to: toAddress,
-          value: sendValue
-        })
+/* const toAddress = '0x2186F17f32b9bb57B5823E4b1C47Db32EB3B0674';
+const sendValue = web3.toWei('0.1', 'ether');
+web3.eth.sendTransaction({
+	from: web3.eth.accounts[0],
+	to: toAddress,
+	value: sendValue
+}); */
 export default {
   name: 'sponsorstake',
-  components: {
-    Footer
-  },
   methods: {
     send() {
       

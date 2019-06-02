@@ -45,8 +45,8 @@
 										<li><strong>0</strong><span>Avg. Pay</span></li>
 									</ul>
                   <div class="buttons-to-right always-visible margin-top-25 margin-bottom-0">
-                    <a href="#small-dialog-1"  class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Accept Match Offer</a>
-                    <a href="#small-dialog-2" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
+                    <router-link to="/workermatchup" class="popup-with-zoom-anim button ripple-effect" @click="matchup"><i class="icon-material-outline-check"></i> Accept Match Offer</router-link>
+                    <a href="#" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
                     <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                   </div>
 								</li>
@@ -79,8 +79,8 @@
 									</ul>
 
 									<div class="buttons-to-right always-visible margin-top-25 margin-bottom-0">
-                    <a href="#small-dialog-1"  class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Accept Match Offer</a>
-                    <a href="#small-dialog-2" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
+                    <router-link to="/workermatchup" class="popup-with-zoom-anim button ripple-effect" @click="matchup"><i class="icon-material-outline-check"></i> Accept Match Offer</router-link>
+                    <a href="#" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
                     <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                   </div>
 								</li>
@@ -99,12 +99,12 @@
 
 <script>
 // @ is an alias to /src
-import Footer from '../components/Footer.vue';
-
 export default {
-  name: 'workerstatus',
-  components: {
-    Footer
-  }
+	name: 'workerstatus',
+	methods: {
+		matchup() {
+			this.$router.push('/workermatchup');
+		}
+	}
 }
 </script>

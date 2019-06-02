@@ -4,7 +4,7 @@
             <v-flex xs12 sm8 md4>
                 <v-card class="elevation-12">
                     <v-toolbar dark color="primary">
-                        <v-toolbar-title>Log In</v-toolbar-title>
+                        <v-toolbar-title>Register</v-toolbar-title>
                     </v-toolbar>
                     <v-card-text>
                         <v-form ref="form" v-model="valid" lazy-validation>
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-    name: 'Login',
+    name: 'Register',
     data() {
         return {
             valid: false,
@@ -50,7 +50,7 @@ export default {
     methods: {
         submit() {
             if (this.$refs.form.validate()) {
-                this.$store.dispatch('login', {
+                this.$store.dispatch('register', {
                     email: this.email,
                     password: this.password
                 });

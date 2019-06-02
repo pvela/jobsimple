@@ -82,7 +82,7 @@
 
 										<!-- Buttons -->
 										<div class="buttons-to-right always-visible">
-											<router-link to="sponsorstake" class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Stake to Interview</router-link>
+											<router-link to="/sponsorstake" class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Stake to Interview</router-link>
 											<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
 											<a href="#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
 										</div>
@@ -102,16 +102,11 @@
 
 <script>
 // @ is an alias to /src
-import Footer from '../components/Footer.vue';
-
 export default {
   name: 'sponsorstatus',
-  components: {
-   Footer
-  },
   methods: {
     showStake() {
-      this.$router.push('sponsorstake');
+      this.$router.push('/sponsorstake');
     }
   }
 }
